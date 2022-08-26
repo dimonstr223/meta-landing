@@ -1,0 +1,601 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Audiowide";
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.title__span {
+  color: #a8a8a8;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url(../images/nft/header-nft.jpg);
+  background-position: top 85px right 10%;
+  background-repeat: no-repeat;
+  background-size: 55em;
+}
+
+.header__top {
+  padding-top: 50px;
+  margin-bottom: 133px;
+}
+
+.header__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__logo {
+  margin-left: 70px;
+  margin-right: 40px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  font-family: "DM Mono", monospace;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials__link {
+  display: block;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.header__bottom {
+  margin-top: 133px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 114px;
+}
+
+.header__info {
+  max-width: 440px;
+}
+
+.header__info-title {
+  font-family: "Audiowide";
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 61px;
+  text-transform: uppercase;
+  margin: 0 0 43px;
+}
+
+.header__info-text {
+  margin-bottom: 115px;
+  max-width: 340px;
+}
+
+.header__info-btn {
+  background: #8dfd1b;
+  padding: 17px 40px 27px;
+  color: #000;
+  font-family: "DM Mono", monospace;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.wave__inner {
+  display: flex;
+  justify-content: start;
+  gap: 163px;
+  margin-bottom: 120px;
+}
+
+.wave__nft {
+  max-width: 351px;
+}
+
+.wave__nft-title {
+  margin-bottom: 40px;
+}
+
+.wave__info {
+  max-width: 580px;
+}
+
+.wave__info-text--about,
+.mrl__box-info-text--about {
+  padding-left: 22px;
+  border-left: 2px solid #8dfd1b;
+  color: #8dfd1b;
+  font-family: "DM Mono";
+  font-size: 21px;
+  line-height: 32px;
+  margin-bottom: 27px;
+}
+
+.wave__info-text + .wave__info-text {
+  margin-top: 18px;
+}
+
+.wave__info-btn {
+  display: inline-block;
+  border: 1px solid #8dfd1b;
+  padding: 10px 33px 16px;
+  margin-top: 36px;
+  transition: all 0.3s;
+}
+
+.wave__info-btn:hover {
+  background-color: #8dfd1b;
+  color: #000;
+}
+
+.artists {
+  overflow-x: hidden;
+}
+
+.artists__inner {
+  margin-bottom: 255px;
+}
+
+.artists__title,
+.team__title {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  font-family: "Audiowide";
+  font-size: 79px;
+  line-height: 88px;
+  text-transform: uppercase;
+  margin-bottom: 125px;
+}
+
+.artists__title-span,
+.team__title-span {
+  opacity: 0;
+}
+
+.artists__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.atrist__list-item--img {
+  margin-bottom: 20px;
+}
+
+.mrl {
+  overflow-x: hidden;
+}
+
+.mrl__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mrl__inner {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.mrl__box {
+  display: flex;
+  gap: 40px;
+  max-width: 878px;
+  padding: 60px;
+  background-color: #222;
+  display: none;
+  transition: all 0.3s;
+}
+
+.mrl__box--active {
+  display: flex;
+}
+
+.mrl__list-item {
+  font-family: "DM Mono";
+  width: 282px;
+  padding: 25px 0 31px 28px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mrl__list-item--active {
+  background-color: #222;
+  color: #8dfd1b;
+}
+
+.mrl__box-img {
+  object-fit: contain;
+}
+
+.mrl__box-info-text + .mrl__box-info-text {
+  margin-top: 18px;
+}
+
+.mrl__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.roadmap {
+  padding-top: 117px;
+}
+
+.roadmap__title {
+  text-align: center;
+  margin-bottom: 106px;
+}
+
+.roadmap__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 142px;
+  margin-bottom: 287px;
+}
+
+.roadmap__box {
+  border: 1px solid #8dfd1b;
+  background-color: #222;
+  max-width: 540px;
+  width: 100%;
+}
+
+.roadmap__box-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #8dfd1b;
+  padding: 12px;
+  font-family: "DM Mono";
+  text-transform: uppercase;
+}
+
+.roadmap__box-top--number {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #8dfd1b;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 8px;
+  color: #8dfd1b;
+}
+
+.roadmap__box-top--number-completed {
+  background-color: #8dfd1b;
+  color: #000;
+}
+
+.box-top--phase-title {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #8dfd1b;
+  letter-spacing: 1px;
+}
+
+.item-top--phase-text {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.roadmap__box-bottom {
+  padding: 30px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 75px;
+}
+
+.roadmap__box-1::before,
+.roadmap__box-2::before,
+.roadmap__box-3::before {
+  content: url(../images/circles.svg);
+  position: absolute;
+  width: 672px;
+  height: 672px;
+  z-index: -1;
+}
+
+.roadmap__box-1::before {
+  transform: translate(-60%, -60%);
+}
+.roadmap__box-2::before {
+  right: 10%;
+  transform: translateY(-44%);
+}
+.roadmap__box-3::before {
+  transform: translate(-64%, -10%);
+}
+
+.roadmap__box-1::after,
+.roadmap__box-2::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: #8dfd1b;
+  transform: translateY(120%);
+  left: 50%;
+}
+
+.box-bottom--wrapper {
+  max-width: 310px;
+  font-size: 11px;
+  line-height: 25px;
+}
+
+.box-bottom--list {
+  margin: 0 0 16px 23px;
+  line-height: 32px;
+}
+
+.box-bottom--text + .box-bottom--text {
+  margin-top: 14px;
+}
+
+.box-bottom--img {
+  border-radius: 9px;
+}
+
+.roadmap__partners {
+  text-align: center;
+}
+
+.roadmap__partners-title {
+  font-family: "DM Mono";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8dfd1b;
+  margin-bottom: 50px;
+}
+
+.roadmap__partners-logoholder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px 85px;
+  margin-bottom: 240px;
+}
+
+.questions__inner {
+  margin-bottom: 115px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions__nft {
+  max-width: 350px;
+}
+
+.questions__nft-title {
+  margin-bottom: 50px;
+}
+
+.questions__list {
+  background-color: #222;
+  padding: 26px 30px;
+  display: inline-block;
+  max-width: 580px;
+}
+
+.questions__list-item--title {
+  font-family: "DM Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.questions__list-item--text {
+  font-size: 12px;
+  line-height: 19px;
+  color: #c4c4c4;
+  margin-bottom: 26px;
+}
+
+.team {
+  overflow-x: hidden;
+}
+
+.team__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 250px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+}
+
+.team__box-img {
+  margin-bottom: 19px;
+}
+
+.team__box-title {
+  font-family: "DM Mono";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.team__box-spec {
+  font-family: "DM Mono";
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  color: #8dfd1b;
+}
+
+.team__box-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.team__box-socials--item {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.team__box-socials--link {
+  display: block;
+}
+
+.team__box-text {
+  font-size: 12px;
+  line-height: 19px;
+  max-width: 238px;
+  text-align: center;
+}
+
+.discord__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 118px;
+}
+
+.discord__info {
+  max-width: 390px;
+}
+
+.discord__info-title {
+  font-family: "Audiowide";
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 61px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+
+.discord__info-title--span {
+  color: #8dfd1b;
+}
+
+.discord__info-text {
+  margin-bottom: 35px;
+}
+
+.discord__info-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8dfd1b;
+  color: #000;
+  font-family: "DM Mono";
+  line-height: 16px;
+  max-width: 225px;
+  gap: 10px;
+  padding: 15px 33px;
+}
+
+.footer {
+  background-color: #42006a;
+}
+
+.footer__inner {
+  padding: 100px 0 100px 55px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 330px;
+  gap: 30px;
+}
+
+.footer__lists-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer__item,
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "DM Mono";
+  line-height: 19px;
+}
+
+.footer__list-gap {
+  justify-content: start;
+  gap: 29px;
+  font-size: 13px;
+  line-height: 15px;
+}
